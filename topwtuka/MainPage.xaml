@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="topwtuka.MainPage">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <StackLayout x:Name="Container">
+
+                <Grid>
+
+                    <StackLayout 
+                         Orientation="Vertical"
+                         VerticalOptions="StartAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+
+                        <Frame x:Name="punaneFrame" 
+                            BackgroundColor="Gray" 
+                            WidthRequest="100" 
+                            HeightRequest="100"
+                            CornerRadius="50"
+                            Margin="10"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label x:Name="punaneLabel" 
+                           Text="punane" 
+                           TextColor="Black" 
+                           FontSize="15"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+                        <Frame x:Name="kollaneFrame" 
+                            CornerRadius="50" 
+                            BackgroundColor="Gray"
+                            Margin="10"
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label x:Name="kollaneLabel" 
+                           Text="kollane" 
+                           TextColor="Black" 
+                           FontSize="15"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+
+                        <Frame x:Name="rohelineFrame" 
+                            CornerRadius="50" 
+                            BackgroundColor="Gray"
+                            Margin="10"
+                            WidthRequest="100" 
+                            HeightRequest="100"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label x:Name="rohelineLabel" 
+                           Text="roheline" 
+                           TextColor="Black" 
+                           FontSize="15"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+
+            <Label x:Name="lbl3"
+                   Text="Lülitage valgusfoor sisse"
+                   FontSize="15"
+                   TextColor="Black"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="End"
+                Spacing="20">
+
+                <Button x:Name="ButtonSisse"
+                        Text="Sisse"
+                        TextColor="Black"
+                        BackgroundColor="LightGray"
+                        Clicked="OnButtonSisseClicked"
+                        HorizontalOptions="StartAndExpand" 
+                        Margin="10"/>
+
+                <Button x:Name="ButtonTagasi"
+                        Text="Tagasi"
+                        TextColor="Black"
+                        BackgroundColor="LightGray"
+                        Clicked="OnButtonTagasiClicked"
+                        HorizontalOptions="CenterAndExpand" 
+                        Margin="10"/>
+
+                <Button x:Name="ButtonVälja"
+                        Text="Välja"
+                        TextColor="Black"
+                        BackgroundColor="LightGray"
+                        Clicked="OnButtonVäljaClicked"
+                        HorizontalOptions="EndAndExpand" 
+                        Margin="10"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
